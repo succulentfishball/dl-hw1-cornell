@@ -111,7 +111,7 @@ def train_one(setting, config, train_set, val_loader):
     history = []
     states = []
 
-    for epoch in range(EPOCHS):
+    for epoch in range(1, EPOCHS+1):
         current_lr = optimizer.param_groups[0]["lr"]
         model.train()
 
