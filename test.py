@@ -73,10 +73,7 @@ def main():
 
             total += labels.size(0)
 
-    print(f"Device: {device}")
-    print(f"Setting: {checkpoint['setting']}")
-    print(f"Selected epoch: {checkpoint['epoch']}")
-    print(f"Configuration: {checkpoint['model_config']}")
+    print(f"Device: {device}, Setting: {checkpoint['setting']}, Selected epoch: {checkpoint['epoch']}, Configuration: {checkpoint['model_config']}")
     print(f"Test loss: {total_loss / total:.4f}")
     print(f"Test accuracy: {correct / total:.2%}")
 

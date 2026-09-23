@@ -285,6 +285,7 @@ def save_results(results):
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Using d2l's wrapper package
     data = d2l.FashionMNIST(batch_size=BATCH_SIZE)
 
     full_train_set = data.get_dataloader(True).dataset
